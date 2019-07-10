@@ -4,6 +4,21 @@
     padding: 0;
 }
 
+@font-face{
+    font-family: "Open Sans";
+    src: url('../fonts/OpenSans-Bold-webfont.woff');
+    font-weight: bold;
+    font-style: normal;
+    
+}
+
+@font-face{
+    font-family: "Open Sans";
+    src: url('../fonts/OpenSans-Regular-webfont.woff');
+    font-weight: 400;
+    font-style: normal;
+    
+}
 li{
     list-style: none;
 }
@@ -18,7 +33,7 @@ html,body
 }
 
 .container{
-    width: 1100px;
+    
     padding: 0 20px;
     margin: 0 auto;
     height: 100%;
@@ -41,6 +56,7 @@ html,body
 .menu__link{
     display: flex;
     color: #fff;
+    line-height: 40px;
     text-decoration: none;
     text-transform: uppercase;
     
@@ -66,6 +82,8 @@ html,body
     font-size: 21px;
 }
 .contacts__link {
+    display: block;
+    text-align: right;
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
     font-size: 14px;
@@ -74,17 +92,25 @@ html,body
 }
 /* inner===============================================*/
 
-.inner-img{
-    text-align: center;
+
+.inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 625px;
+}
+.inner__img {
+    display: block;
 }
 /* feauters===============================================*/
 .feauters{
     background-color: #131415;
     color: #fff;
     height: 100%;
+    padding-bottom: 50px;
 }
 
-h2{
+.title.feauters{
     text-align: center;
     font-family: 'Open Sans', sans-serif;
     font-size: 49px;
@@ -94,14 +120,16 @@ h2{
     
 .feauters__items{
     width: 200px;
-    padding-bottom: 107px;
+    height: 600px;
+    
 }
 .feauters__container{
-    display: flex;
-    justify-content: space-between;
     width: 740px;
 }
 
+.feauters__list{
+    list-style-position: inside;
+}
 
 .feauters__title {
     font-family: 'Open Sans';
@@ -111,10 +139,14 @@ h2{
     padding-top: 41px;
     padding-bottom: 35px;
 }
-.feauters__list{
-    text-align: center;
-}
 
+.feauters__elemm{
+    display: inline-block;
+    text-align: center;
+   
+    width: 230px;
+
+}
 .feauters__icon{
     display: flex;
     justify-content: center;
@@ -140,22 +172,18 @@ h2{
     text-align: left;
     padding: 0px 0px 25px 25px;
 }
-/* last-news===============================================*/
-.news__container{
+/* last-news==active=============================================*/
+
+.active__container{
     display: flex;
-    align-items: center;
-    margin: 0 auto;
-}
-.last-news{
-    display: flex; 
-    justify-content: space-between;
     width: 1060px;
     margin: 0 auto;
+    min-height: 100%;
 }
-h3{
+.title.news{
     font-family: 'Open Sans';
     font-size:49px;
-    font-weight: 700;
+    font-weight: bold;
     text-align: center;
     text-transform: uppercase;
     padding-top: 70px;
@@ -166,14 +194,12 @@ h3{
     width: 880px;
     display: flex; 
     justify-content: center;
-    
-    
-    
-    
+    margin-bottom: 60px;   
 }
 
 .news__data{
     color: #989898;
+    
 }
 .news__title{
     font-family: 'Roboto', sans-serif;
@@ -189,36 +215,34 @@ h3{
    line-height: 1.50em;
 }
 .news__logo {
-    padding-right: 20px
+    padding-right: 20px;
 }
 .news__elemm{
-    padding-top: 30px;
-    padding-bottom: 30px;
     border-bottom: 2px solid #f5f5f5;
    
    
 }
 .news__elemm:last-child{
-    border-bottom:none;
-    padding-bottom: 80px; 
+    border-bottom:none; 
 }
-
+.active-two {
+    padding-top:20px;
+}
    
-.top-news {
-    display: flex;
-    align-items: center;
-}
-.title__link{
-    text-align: center;
-}
-.subtitle__link{
-    text-align: center;
-    color: #848383;
-}
-.link_img{  
-    padding: 20px;
+.top-news{
+    padding-left: 20px;
 }
 
+.subtitle__link{
+    
+    color: #848383;
+    margin-bottom: 25px;
+}
+
+.news__link{
+    display: block;
+    padding-bottom: 20px;
+}
 
 /* footer===============================================*/
 .footer{
@@ -232,7 +256,10 @@ h3{
     justify-content: space-between;
     align-items: center;
 }
-.footer__img{
+.footer__img {
+    margin-right: 10px;
+}
+.footer__link{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -246,7 +273,7 @@ h3{
 .social__title{
     padding-bottom: 11px;
 }
-.footer__img:hover{
+.footer__link:hover{
     background: #d0d0d0;
 }
 .social__list {
