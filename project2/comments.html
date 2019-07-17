@@ -57,19 +57,30 @@
             </div>
         </header>
 
-        <div class="div">
-            <h3>Последние новости </h3>
+            
 
-    <div class="last-news">
+    
             
             
-        <div class="container news__container ">
-                
+        <div class="container active__container">
+          
+            <div class="active">
+                    <div class="bread-crumbs">
+                            <ul class="bread-crumbs__list">
+                                <li class="bread-crumbs__elem">
+                                    <a href="#" class="bread-crumbs__link">Главная</a>
+                                </li>
+                                <li class="bread-crumbs__elem">
+                                    <a class="bread-crumbs__link">Отзывы</a>
+                                </li>
+                            </ul>
+                        </div>
+                    <h3 class="title title__review">Отзывы</h3>
             <ul class="news__list">
                 <li class="news__elemm">
                     <div class="news__items">
                         <div class="news__logo">
-                            <img src="/img/comments/comf.png" alt="">
+                            <img class="logo__img" src="./img/comments/comone.jpg" alt="">
                         </div>
                         <div class="news__desc">
                             <div class="news__data">
@@ -89,7 +100,7 @@
                 <li class="news__elemm">
                     <div class="news__items">
                         <div class="news__logo">
-                            <img src="/img/comments/comt.png" alt="">
+                            <img class="logo__img"src="./img/comments/comtwo.jpg" alt="">
                         </div>
                         <div class="news__desc">
                             <div class="news__data">
@@ -108,7 +119,7 @@
                 <li class="news__elemm">
                     <div class="news__items">
                         <div class="news__logo">
-                            <img src="/img/comments/comtr.png" alt="">
+                            <img class="logo__img" src="/img/comments/comtr.png" alt="">
                         </div>
                         <div class="news__desc">
                             <div class="news__data">
@@ -127,7 +138,7 @@
                 <li class="news__elemm">
                     <div class="news__items">
                         <div class="news__logo">
-                            <img class="logo__comm" src="/img/comments/comfour.png" alt="">
+                            <img class="logo__img" src="/img/comments/comfour.jpg" alt="">
                         </div>
                         <div class="news__desc">
                             <div class="news__data">
@@ -145,24 +156,109 @@
                 </li>
             </ul>
     </div>
-    </div>      
-</div>
+    
+    
+</div>  
+    <div class="container pagination__container">
+        <div class="pagination">
+            <div class="pagination__text">Страница 1 из 7</div>
+            <div class="pagination__pages">
+                <a href="#" class="pagination__arrow">
+                    <img src="./img/arrow-left.png" alt="arrow-left">
+                </a>
+                <ul class="pagination__list">
+                    <li class="pagination__elem pagination__elem--active">
+                        <a href="#" class="pagination__page">1</a>
+                    </li>
+                    <li class="pagination__elem ">
+                        <a href="#" class="pagination__page">2</a>
+                    </li>
+                    <li class="pagination__elem">
+                        <a href="#" class="pagination__page">3</a>
+                    </li>
+                    <li class="pagination__elem">
+                        <a href="#" class="pagination__page">4</a>
+                    </li>
+                    <li class="pagination__elem">
+                        <a href="#" class="pagination__page">5</a>
+                    </li>
+                    <li class="pagination__elem">
+                        <a href="#" class="pagination__page">6</a>
+                    </li>
+                </ul>
+                <a href="#" class="pagination__arrow">
+                    <img src="./img/arrow-right.png" alt="arrow-right">
+                </a>
+            </div>
+        </div>
+    </div>
+
+
 <div class="cmt">
+    <div class="container com">
+        <div class="cmt__title">Помимо перечисленных услуг, мы предоставляем консультации <br>профессиональных диетологов, тренеров, психологов. Также есть кабинет <br>массажа, 
+        зал спа рядом с бассейном и возможность арендовать центр для <br>проведения массовых мероприятий. <span class="orange-text">Ждем ваших заявок!</span></div>
+    </div>
+    </div>
 <div class="container">
-    Помимо перечисленных услуг, мы предоставляем консультации <br>профессиональных диетологов, тренеров, психологов. Также есть кабинет <br>массажа, 
-    зал спа рядом с бассейном и возможность арендовать центр для <br>проведения массовых мероприятий. Ждем ваших заявок!
-</div>
-</div>
-    <div class="container">
-        <form action="URL" method="POST/GET">
-            <h2>Оставить отзыв</h2>
-            <input type="name"> 
-            <input type="name">
-            <p>Текст отзыва</p>
-            
+                
+    <div class="form-wrapper">
+        <form class="form">
+            <h2 class="title title__form">Оставить отзыв</h2>
+            <div class="form__row">
+                <div class="form__col">
+                    <label class="form__label">
+                        <div class="form__text">Ваше имя</div>
+                        <input type="text" class="form__input" value="Андрей">
+                    </label>
+                </div>
+                <div class="form__col">
+                    <label class="form__label">
+                        <div class="form__text">Ссылка на профиль VK</div>
+                        <input type="text" class="form__input" value="vk.com/example">
+                    </label>
+                </div>
+            </div>
+            <div class="form__row">
+                <div class="form__col">
+                    <div class="form__text">Текст отзыва</div>
+                    <textarea name="textarea" class="form__textarea"></textarea>
+                </div>
+            </div>
+            <div class="form__row">
+                <div class="form__col">
+                    <div class="form__radio-buttons">
+                        <div class="form__text">Отображать фото в отзыве?</div>
+                        <div class="form__radio-wrapper">
+                            <label class="form__radio">
+                                <input  class="form__radio-input" name="radio" type="radio">
+                                <div class="form__radio-content">
+                                    <div class="form__radio-btn"></div>
+                                    <div class="form__radio-text">Да</div>
+                                </div>
+                            </label>
+                            <label class="form__radio">
+                                <input  class="form__radio-input" name="radio" type="radio">
+                                <div class="form__radio-content">
+                                    <div class="form__radio-btn"></div>
+                                    <div class="form__radio-text">Нет</div>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form__col form__col--buttons">
+                    <button class="btn">
+                        Отправить</button>
+                </div>
+            </div>
         </form>
     </div>
+    </div>
+
 </div>
+
+   
 <footer class="footer">
     <div class="container">
             <div class="container footer__container">
@@ -179,11 +275,11 @@
                 <div class="social">
                     <h5 class="social__title">Наши социальные сети</h5>
                     <ul class="social__list">
-                        <li class="footer__img"> <a href="#"><img  src="/img/footer/vk.png " alt=""></a></li>
-                        <li class="footer__img"><a href="#"><img  src="/img/footer/fb.png" alt=""></a></li>
-                        <li class="footer__img"><a href="#"><img  src="/img/footer/google.png " alt=""></a></li>
-                        <li class="footer__img"><a href="#"><img  src="/img/footer/twitter.png" alt=""></a></li>
-                        <li class="footer__img "><a href="#"><img src="/img/footer/mail.png" alt=""></a></li>
+                        <li class="footer__img"> <a  class="footer__link"href="#"><img  src="./img/footer/vk.png " alt=""></a></li>
+                        <li class="footer__img"><a class="footer__link" href="#"><img  src="./img/footer/fb.png" alt=""></a></li>
+                        <li class="footer__img"><a class="footer__link" href="#"><img  src="./img/footer/google.png " alt=""></a></li>
+                        <li class="footer__img"><a class="footer__link" href="#"><img  src="./img/footer/twitter.png" alt=""></a></li>
+                        <li class="footer__img "><a class="footer__link" href="#"><img src="./img/footer/mail.png" alt=""></a></li>
                     </ul>
                     
 
