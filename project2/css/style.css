@@ -5,16 +5,16 @@
 }
 @font-face {
     font-family: 'Open sans';
-    src: url('/fonts/OpenSans.woff2') format('woff2'),
-        url('/fonts/OpenSans.woff') format('woff');
+    src: url('../fonts/OpenSans.woff2') format('woff2'),
+        url('../fonts/OpenSans.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Open Sans Bold';
-    src: url('/fonts/OpenSans-Bold.woff2') format('woff2'),
-        url('/fonts/OpenSans-Bold.woff') format('woff');
+    src: url('../fonts/OpenSans-Bold.woff2') format('woff2'),
+        url('../fonts/OpenSans-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
 }
@@ -35,17 +35,19 @@
 }
 .title__serv{
     text-align: left;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 16px;
+    padding-bottom: 41px;
+    letter-spacing: 0.06em;
+    padding-left: 6px;
 }
 .title__review{
-    padding-top: 15px;
-    padding-left: 75px;
+ padding-top: 15px;
 }
 .title__partners{
     text-align: left;
-    padding-top: 30px;
+    padding-top: 0px;
     padding-bottom: 30px;
+    letter-spacing: 0.07em;
 }
 li{
     list-style: none;
@@ -119,6 +121,7 @@ html,body
     color:#f89513;
     
 }
+
 /* inner===============================================*/
 
 
@@ -202,20 +205,20 @@ html,body
     
 }
 /* last-news==active=============================================*/
-
+.container.active__container--padding {
+    padding: 0px 110px;
+}
 .active__container{
     display: flex;
     width: 1060px;
     margin: 0 auto;
     min-height: 100%;
 }
-
 .active__title{
     padding-bottom: 70px;
 }
 
 .news__items{
-    width: 880px;
     display: flex; 
     justify-content: center;
       
@@ -318,9 +321,10 @@ html,body
 }
 .social__list {
     display: flex;
-    justify-content: center;
 }
-
+.social{
+    letter-spacing: 0.09em;
+    }
 .name{
     font-weight: 700;
     text-decoration: underline;
@@ -356,8 +360,7 @@ html,body
 /*bread-crumbs*/
 
 .bread-crumbs {
-margin-left: 80px;
-margin-top: 36px;
+    padding-top:40px;
 }
 
 .bread-crumbs__list {
@@ -470,6 +473,7 @@ margin-top: 36px;
     text-transform: none;
     padding-top:0px;
     padding-bottom: 14px;
+    letter-spacing: 0.09em;
 }
 .form-wrapper {
 	display: flex;
@@ -527,7 +531,7 @@ margin-top: 36px;
 
 .form__radio-wrapper {
     display: flex;
-    margin-top:15px;
+    margin-top:8px;
     
 }
 
@@ -554,7 +558,7 @@ margin-top: 36px;
 	height: 20px;
 	border-radius: 50%;
 	border: 1px solid #cbcbcb;
-	margin-right: 5px;
+	margin-right: 13px;
 }
 
 .form__radio-btn:after {
@@ -584,10 +588,11 @@ margin-top: 36px;
 	border:0;
 	border-radius: 3px;
 	color: #fff;
-	padding: 15px 25px;
+	padding: 15px 15px;
 	cursor: pointer;
     text-transform: uppercase;
     font-family: 'Open Sans Bold';
+    letter-spacing: 0.03em;
 }
 
 .btn:hover {
@@ -601,21 +606,33 @@ margin-top: 36px;
     min-width: 880px;  
 }
 
+.img__title{
+    position: absolute;
+    top:50;
+    left:50 ;
+    color: #f5f5f5;
+    z-index: 1;
+    font-family: 'Open Sans Bold';
+    font-size: 24px;
+    text-transform: uppercase;
+}
 
+.container.container--padding{
+    padding: 0 100px;
+}
     
 .services__list{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    margin: 0 -20px;
 }
 
 .services__elemm{
-    width:290px; 
+    width:313px; 
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 90px;
+    padding-bottom: 80px;
 
 }
 .services__img{
@@ -627,39 +644,54 @@ margin-top: 36px;
     margin: 0 auto;
     overflow: hidden;
     border-radius: 5px;
+    position: relative;
 }
+.services__img::after{
+    content: '';
+    position: absolute;
+    background-color: rgba(0, 0, 0,0.5);
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
 
+
+}
+.services__img:hover::after{
+    width: 0;
+    height: 0;
+    transition: 0.5s;
+}
 
 .services__text{
     width: 250px;
     font-family: 'Open Sans';
     font-size: 14px;
+    
 }
 
 .services__title{
     font-family: 'Open Sans Bold';
-    padding-top: 28px;
+    padding-top: 31px;
     padding-bottom: 10px;
+    letter-spacing: 0.09em;
 }
 /*partners==============================*/
 .partners__container{
-    width: 740px;
     margin: 0 auto;
+    padding-bottom: 12px;
 }
-
 
 .partners__list{
     display: flex;
     flex-wrap: wrap;
-
+    text-align: center;
+    padding-top:51px;
+    padding-bottom: 51px;
 }
 .partners__item{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding:50px;
-    width: 33.33333%;
-
+    width: 300px;
+    padding-bottom: 30px;
 }
 
 .partners__logo{
