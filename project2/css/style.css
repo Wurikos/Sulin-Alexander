@@ -639,6 +639,7 @@ html,body
 }
 
 .bread-crumbs__elem {
+    display: flex;
 	margin-right: 5px;
 }
 
